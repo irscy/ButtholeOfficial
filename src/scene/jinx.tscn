@@ -63,18 +63,17 @@ animations = [{
 }]
 
 [node name="Jinx" type="Node2D"]
-scale = Vector2(0.6, 0.35)
 script = ExtResource( "1_aiihl" )
-horizSpr = "horizSpr"
-upSpr = "upSpr"
-downSpr = "downSpr"
-idleSpr = "idleSpr"
+horiz_spr = "horizSpr"
+up_spr = "upSpr"
+down_spr = "downSpr"
+idle_spr = "idleSpr"
 
 [node name="Sprite" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.6, 0.35)
 frames = SubResource( "SpriteFrames_p4ku7" )
 animation = &"idleSpr"
 speed_scale = 0.5
-playing = true
 centered = false
 offset = Vector2(-130, -383)
 
