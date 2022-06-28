@@ -1,0 +1,81 @@
+[gd_scene load_steps=14 format=3 uid="uid://d3mn3tcpb3csj"]
+
+[ext_resource type="Script" path="res://src/script/move_controller.gd" id="1_aiihl"]
+[ext_resource type="Texture2D" uid="uid://1omkw7fp7s4n" path="res://src/sprite/spriteSHEETS/jinxWALK_horiz.png" id="2_qy5e4"]
+[ext_resource type="Texture2D" uid="uid://d8i23uu2yynq" path="res://src/sprite/static/jinx/jinxSPRITE.png" id="3_hl7o6"]
+[ext_resource type="Texture2D" uid="uid://c4wi8pv76d7fw" path="res://src/sprite/spriteSHEETS/jinxWALK_down.png" id="4_5plp0"]
+[ext_resource type="Texture2D" uid="uid://gk2v13gs0q4u" path="res://src/sprite/spriteSHEETS/jinxWALK_up.png" id="4_jvj3d"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k5ejk"]
+atlas = ExtResource( "2_qy5e4" )
+region = Rect2(0, 0, 290, 384)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r6tc3"]
+atlas = ExtResource( "2_qy5e4" )
+region = Rect2(290, 0, 290, 384)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ynfi0"]
+atlas = ExtResource( "3_hl7o6" )
+region = Rect2(0, 0, 290, 384)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lre8u"]
+atlas = ExtResource( "4_jvj3d" )
+region = Rect2(0, 0, 290, 384)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yy754"]
+atlas = ExtResource( "4_jvj3d" )
+region = Rect2(290, 0, 290, 384)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wjo7w"]
+atlas = ExtResource( "4_5plp0" )
+region = Rect2(0, 0, 290, 384)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ccgrp"]
+atlas = ExtResource( "4_5plp0" )
+region = Rect2(290, 0, 290, 384)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_p4ku7"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [SubResource( "AtlasTexture_k5ejk" ), SubResource( "AtlasTexture_r6tc3" )],
+"loop": true,
+"name": &"horizSpr",
+"speed": 5.0
+}, {
+"frames": [SubResource( "AtlasTexture_ynfi0" )],
+"loop": true,
+"name": &"idleSpr",
+"speed": 5.0
+}, {
+"frames": [SubResource( "AtlasTexture_lre8u" ), SubResource( "AtlasTexture_yy754" )],
+"loop": true,
+"name": &"upSpr",
+"speed": 5.0
+}, {
+"frames": [SubResource( "AtlasTexture_wjo7w" ), SubResource( "AtlasTexture_ccgrp" )],
+"loop": true,
+"name": &"downSpr",
+"speed": 5.0
+}]
+
+[node name="Jinx" type="Node2D"]
+scale = Vector2(0.6, 0.35)
+script = ExtResource( "1_aiihl" )
+horizSpr = "horizSpr"
+upSpr = "upSpr"
+downSpr = "downSpr"
+idleSpr = "idleSpr"
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+frames = SubResource( "SpriteFrames_p4ku7" )
+animation = &"idleSpr"
+speed_scale = 0.5
+playing = true
+centered = false
+offset = Vector2(-130, -383)
+
+[node name="FlipAnim" type="AnimationPlayer" parent="Sprite"]

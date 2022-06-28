@@ -1,0 +1,6 @@
+[gd_resource type="Font" load_steps=2 format=3 uid="uid://bltuamjd1q3x"]
+
+[ext_resource type="FontData" uid="uid://bvnuv7t45k8gf" path="res://src/font/origin/Sono/desktop/Sono-ExtraBold.ttf" id="1"]
+
+[resource]
+data/0 = ExtResource( "1" )
