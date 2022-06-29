@@ -1,0 +1,58 @@
+[gd_scene load_steps=5 format=3 uid="uid://bei0sdylmljly"]
+
+[sub_resource type="Animation" id="Animation_xc5k0"]
+resource_name = "Horiz"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(0.37893, 1),
+"update": 0,
+"values": [Vector2(0.6, 0.25), Vector2(0.6, 0.35)]
+}
+
+[sub_resource type="Animation" id="Animation_1r6x2"]
+resource_name = "Up"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(0.378, 1),
+"update": 0,
+"values": [Vector2(0.6, 0.35), Vector2(0.6, 0.45)]
+}
+
+[sub_resource type="Animation" id="Animation_enfhk"]
+resource_name = "Down"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(0.378, 1),
+"update": 0,
+"values": [Vector2(0.6, 0.35), Vector2(0.6, 0.25)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_eewoo"]
+_data = {
+"Down": SubResource( "Animation_enfhk" ),
+"Horiz": SubResource( "Animation_xc5k0" ),
+"Up": SubResource( "Animation_1r6x2" )
+}
+
+[node name="FlipAnim" type="AnimationPlayer"]
+libraries = {
+"": SubResource( "AnimationLibrary_eewoo" )
+}
