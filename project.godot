@@ -23,6 +23,7 @@ _global_script_class_icons={
 config/name="ButtholeOfficial"
 run/main_scene="res://src/scene/Main.tscn"
 config/features=PackedStringArray("4.0", "Vulkan Clustered")
+boot_splash/show_image=false
 config/icon="res://icon.png"
 
 [input]

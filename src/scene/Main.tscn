@@ -3,6 +3,5 @@
 [ext_resource type="PackedScene" uid="uid://d3mn3tcpb3csj" path="res://src/scene/jinx.tscn" id="1_d5ppw"]
 
 [node name="Main" type="Node2D"]
-position = Vector2(500, 0)
 
 [node name="Jinx" parent="." instance=ExtResource( "1_d5ppw" )]

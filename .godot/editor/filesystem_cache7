@@ -1,5 +1,5 @@
 0b7126e0c6e86d3ec295a72f5aa6e0bd
-::res://::1656458889
+::res://::1656808761
 icon.png::CompressedTexture2D::7647987193562609642::1656419721::1656419753::1::::<><>::
 ::res://src/::1656419993
 ::res://src/audio/::1656420031
@@ -31,11 +31,13 @@ Sono-Light.woff2::FontData::4944589404930358958::1655488750::1656420030::1::::<>
 Sono-Medium.woff2::FontData::6386301072075512947::1655488750::1656420030::1::::<><>::
 Sono-Regular.woff2::FontData::8338152850386945961::1655488750::1656420030::1::::<><>::
 Sono-SemiBold.woff2::FontData::4990075704110438173::1655488750::1656420030::1::::<><>::
-::res://src/scene/::1656505950
-jinx.tscn::PackedScene::9150162530845461061::1656505950::0::1::::<><>::res://src/script/move_controller.gd<>uid://1omkw7fp7s4n<>uid://d8i23uu2yynq<>uid://c4wi8pv76d7fw<>uid://gk2v13gs0q4u
-Main.tscn::PackedScene::3997089633630625987::1656505949::0::1::::<><>::uid://d3mn3tcpb3csj
-::res://src/script/::1656505949
-move_controller.gd::GDScript::-1::1656505949::0::1::::move_controller<>Node2D<>::
+::res://src/scene/::1656716600
+jinx.tscn::PackedScene::9150162530845461061::1656716600::0::1::::<><>::res://src/script/move_controller.gd<>uid://1omkw7fp7s4n<>uid://d8i23uu2yynq<>uid://c4wi8pv76d7fw<>uid://gk2v13gs0q4u<>uid://bei0sdylmljly
+Main.tscn::PackedScene::3997089633630625987::1656716599::0::1::::<><>::uid://d3mn3tcpb3csj
+::res://src/scene/player/::1656524757
+FlipAnim.tscn::PackedScene::2685241344548783786::1656524757::0::1::::<><>::
+::res://src/script/::1656716643
+move_controller.gd::GDScript::-1::1656716643::0::1::::move_controller<>Node2D<>::
 ::res://src/sprite/::1656420031
 jinx_STICK.png::CompressedTexture2D::1613047354719573562::1655236815::1656420031::1::::<><>::
 ::res://src/sprite/spriteSHEETS/::1656420031

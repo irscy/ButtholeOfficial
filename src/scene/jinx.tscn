@@ -15,10 +15,6 @@ region = Rect2(0, 0, 290, 384)
 atlas = ExtResource( "2_qy5e4" )
 region = Rect2(290, 0, 290, 384)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ynfi0"]
-atlas = ExtResource( "3_hl7o6" )
-region = Rect2(0, 0, 290, 384)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_lre8u"]
 atlas = ExtResource( "4_jvj3d" )
 region = Rect2(0, 0, 290, 384)
@@ -35,6 +31,10 @@ region = Rect2(0, 0, 290, 384)
 atlas = ExtResource( "4_5plp0" )
 region = Rect2(290, 0, 290, 384)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_ynfi0"]
+atlas = ExtResource( "3_hl7o6" )
+region = Rect2(0, 0, 290, 384)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_p4ku7"]
 animations = [{
 "frames": [],
@@ -47,11 +47,6 @@ animations = [{
 "name": &"horizSpr",
 "speed": 5.0
 }, {
-"frames": [SubResource( "AtlasTexture_ynfi0" )],
-"loop": true,
-"name": &"idleSpr",
-"speed": 5.0
-}, {
 "frames": [SubResource( "AtlasTexture_lre8u" ), SubResource( "AtlasTexture_yy754" )],
 "loop": true,
 "name": &"upSpr",
@@ -60,6 +55,11 @@ animations = [{
 "frames": [SubResource( "AtlasTexture_wjo7w" ), SubResource( "AtlasTexture_ccgrp" )],
 "loop": true,
 "name": &"downSpr",
+"speed": 5.0
+}, {
+"frames": [SubResource( "AtlasTexture_ynfi0" )],
+"loop": true,
+"name": &"idleSpr",
 "speed": 5.0
 }]
 
@@ -71,7 +71,7 @@ down_spr = "downSpr"
 idle_spr = "idleSpr"
 
 [node name="Sprite" type="AnimatedSprite2D" parent="."]
-scale = Vector2(0.6, 0.255467)
+scale = Vector2(0.6, 0.25)
 frames = SubResource( "SpriteFrames_p4ku7" )
 animation = &"idleSpr"
 speed_scale = 0.5
