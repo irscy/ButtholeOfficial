@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://d3mn3tcpb3csj"]
+[gd_scene load_steps=16 format=3 uid="uid://d3mn3tcpb3csj"]
 
 [ext_resource type="Script" path="res://src/script/move_controller.gd" id="1_aiihl"]
 [ext_resource type="Texture2D" uid="uid://1omkw7fp7s4n" path="res://src/sprite/spriteSHEETS/jinxWALK_horiz.png" id="2_qy5e4"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://c4wi8pv76d7fw" path="res://src/sprite/spriteSHEETS/jinxWALK_down.png" id="4_5plp0"]
 [ext_resource type="Texture2D" uid="uid://gk2v13gs0q4u" path="res://src/sprite/spriteSHEETS/jinxWALK_up.png" id="4_jvj3d"]
 [ext_resource type="PackedScene" uid="uid://bei0sdylmljly" path="res://src/scene/player/FlipAnim.tscn" id="6_lrkq1"]
+[ext_resource type="PackedScene" uid="uid://rwigr8x8i3xj" path="res://src/scene/stick.tscn" id="7_p5uvl"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_k5ejk"]
 atlas = ExtResource( "2_qy5e4" )
@@ -61,6 +62,11 @@ animations = [{
 "loop": true,
 "name": &"idleSpr",
 "speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"swing",
+"speed": 5.0
 }]
 
 [node name="Jinx" type="Node2D"]
@@ -69,13 +75,18 @@ horiz_spr = "horizSpr"
 up_spr = "upSpr"
 down_spr = "downSpr"
 idle_spr = "idleSpr"
+metadata/_edit_lock_ = true
 
 [node name="Sprite" type="AnimatedSprite2D" parent="."]
-scale = Vector2(0.6, 0.25)
+scale = Vector2(0.6, 0.35)
 frames = SubResource( "SpriteFrames_p4ku7" )
-animation = &"idleSpr"
+animation = &"swing"
 speed_scale = 0.5
 centered = false
 offset = Vector2(-130, -383)
+metadata/_edit_lock_ = true
 
 [node name="FlipAnim" parent="Sprite" instance=ExtResource( "6_lrkq1" )]
+
+[node name="Stick" parent="." instance=ExtResource( "7_p5uvl" )]
+metadata/_edit_lock_ = true

@@ -13,9 +13,15 @@ _global_script_classes=[{
 "class": &"move_controller",
 "language": &"GDScript",
 "path": "res://src/script/move_controller.gd"
+}, {
+"base": "Area2D",
+"class": &"weapon",
+"language": &"GDScript",
+"path": "res://src/script/weapon.gd"
 }]
 _global_script_class_icons={
-"move_controller": ""
+"move_controller": "",
+"weapon": ""
 }
 
 [application]
@@ -25,6 +31,10 @@ run/main_scene="res://src/scene/Main.tscn"
 config/features=PackedStringArray("4.0", "Vulkan Clustered")
 boot_splash/show_image=false
 config/icon="res://icon.png"
+
+[display]
+
+window/size/resizable=false
 
 [input]
 
@@ -46,5 +56,10 @@ config/icon="res://icon.png"
 "Move Down"={
 "deadzone": 0.5,
 "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"store_command":true,"alt_pressed":false,"shift_pressed":false,"meta_pressed":false,"command_pressed":false,"pressed":false,"keycode":83,"physical_keycode":0,"unicode":0,"echo":false,"script":null)
+]
+}
+"Swing Weapon"={
+"deadzone": 0.5,
+"events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"store_command":true,"alt_pressed":false,"shift_pressed":false,"meta_pressed":false,"command_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":1,"pressed":false,"double_click":false,"script":null)
 ]
 }
