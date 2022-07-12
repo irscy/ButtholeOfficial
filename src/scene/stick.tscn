@@ -1,72 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://rwigr8x8i3xj"]
+[gd_scene load_steps=4 format=3 uid="uid://rwigr8x8i3xj"]
 
 [ext_resource type="Script" path="res://src/script/weapon.gd" id="1_3p44k"]
 [ext_resource type="Texture2D" uid="uid://w8mwilfjxv67" path="res://src/sprite/jinx_STICK.png" id="1_uq42e"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b4h11"]
 size = Vector2(6.08969, 72.1998)
-
-[sub_resource type="Animation" id="Animation_ibhil"]
-resource_name = "SwingDown"
-length = 1.6
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.4, 1.6),
-"transitions": PackedFloat32Array(0.3, -2, 1),
-"update": 0,
-"values": [Vector2(-50, -100), Vector2(-50, -24), Vector2(-25, -40)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath(".:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.5, 1.6),
-"transitions": PackedFloat32Array(0.2, -2, 1),
-"update": 0,
-"values": [-0.261799, -4.53786, -1.3439]
-}
-
-[sub_resource type="Animation" id="Animation_j1wme"]
-resource_name = "SwingUp"
-length = 1.6
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.4, 1.6),
-"transitions": PackedFloat32Array(0.3, -2, 1),
-"update": 0,
-"values": [Vector2(-50, -24), Vector2(-50, -100), Vector2(-25, -40)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath(".:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.5, 1.6),
-"transitions": PackedFloat32Array(0.2, -2, 1),
-"update": 0,
-"values": [-4.53786, -0.261799, -1.3439]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_qwmr2"]
-_data = {
-"SwingDown": SubResource( "Animation_ibhil" ),
-"SwingUp": SubResource( "Animation_j1wme" )
-}
 
 [node name="Stick" type="Area2D"]
 position = Vector2(-25, -40)
@@ -85,8 +23,3 @@ offset = Vector2(-26, -187)
 position = Vector2(20.1917, -20.1641)
 rotation = -2.35794
 shape = SubResource( "RectangleShape2D_b4h11" )
-
-[node name="SwingAnim" type="AnimationPlayer" parent="."]
-libraries = {
-"": SubResource( "AnimationLibrary_qwmr2" )
-}

@@ -63,11 +63,11 @@ func run_swing(delta : float) -> void:
 # setting variable values
 func set_variable_values() -> void:
 	# misc
-	swing_anim = get_node("SwingAnim")
+	swing_anim = $SwingAnim
 	swing_index = 1
-	sprite_child = get_node("Sprite")
+	sprite_child = $Sprite
 	weapon_holder = get_parent()
-	hitbox = get_node("Hitbox")
+	hitbox = $Hitbox
 	
 	position = Vector2(-24, -50)
 	rotation = deg2rad(-77)

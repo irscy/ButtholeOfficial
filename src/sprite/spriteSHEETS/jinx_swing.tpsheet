@@ -1,0 +1,108 @@
+{
+	"textures": [
+		{
+			"image": "jinx_swing.png",
+			"size": {
+				"w": 1176,
+				"h": 822
+			},
+			"sprites": [
+				{
+					"filename": "1.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 392,
+						"h": 411
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "2.png",
+					"region": {
+						"x": 392,
+						"y": 0,
+						"w": 392,
+						"h": 411
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "3.png",
+					"region": {
+						"x": 784,
+						"y": 0,
+						"w": 392,
+						"h": 411
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "4.png",
+					"region": {
+						"x": 0,
+						"y": 411,
+						"w": 392,
+						"h": 411
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "5.png",
+					"region": {
+						"x": 392,
+						"y": 411,
+						"w": 392,
+						"h": 411
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "6.png",
+					"region": {
+						"x": 784,
+						"y": 411,
+						"w": 392,
+						"h": 411
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:e8232c10053329e9f44df4356c599d00:c8259b3886b2d21224626fa7bf8f381c:01cdc850fae7973084fa7beb71209ecd$"
+	}
+}
