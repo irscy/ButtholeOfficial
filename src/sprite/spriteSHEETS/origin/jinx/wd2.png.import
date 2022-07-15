@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cft0phq7ctus5"
-path="res://.godot/imported/jinx.png-dae1db1e57d83d8332e1a345daa60a55.ctex"
+uid="uid://bche6k2n8quhe"
+path="res://.godot/imported/wd2.png-fc1e6f9f63b569f5c22e0590762ad4dd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/sprite/spriteSHEETS/jinx.png"
-dest_files=["res://.godot/imported/jinx.png-dae1db1e57d83d8332e1a345daa60a55.ctex"]
+source_file="res://src/sprite/spriteSHEETS/origin/jinx/wd2.png"
+dest_files=["res://.godot/imported/wd2.png-fc1e6f9f63b569f5c22e0590762ad4dd.ctex"]
 
 [params]
 

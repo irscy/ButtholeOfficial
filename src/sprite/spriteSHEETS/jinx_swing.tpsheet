@@ -3,8 +3,8 @@
 		{
 			"image": "jinx_swing.png",
 			"size": {
-				"w": 1176,
-				"h": 822
+				"w": 1568,
+				"h": 1233
 			},
 			"sprites": [
 				{
@@ -55,8 +55,8 @@
 				{
 					"filename": "4.png",
 					"region": {
-						"x": 0,
-						"y": 411,
+						"x": 1176,
+						"y": 0,
 						"w": 392,
 						"h": 411
 					},
@@ -70,7 +70,7 @@
 				{
 					"filename": "5.png",
 					"region": {
-						"x": 392,
+						"x": 0,
 						"y": 411,
 						"w": 392,
 						"h": 411
@@ -85,9 +85,99 @@
 				{
 					"filename": "6.png",
 					"region": {
+						"x": 392,
+						"y": 411,
+						"w": 392,
+						"h": 411
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "wd1.png",
+					"region": {
 						"x": 784,
 						"y": 411,
 						"w": 392,
+						"h": 411
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "wd2.png",
+					"region": {
+						"x": 1176,
+						"y": 411,
+						"w": 391,
+						"h": 411
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "wh1.png",
+					"region": {
+						"x": 0,
+						"y": 822,
+						"w": 392,
+						"h": 411
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "wh2.png",
+					"region": {
+						"x": 392,
+						"y": 822,
+						"w": 392,
+						"h": 411
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "wu1.png",
+					"region": {
+						"x": 784,
+						"y": 822,
+						"w": 392,
+						"h": 411
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "wu2.png",
+					"region": {
+						"x": 1176,
+						"y": 822,
+						"w": 391,
 						"h": 411
 					},
 					"margin": {
@@ -103,6 +193,6 @@
 	"meta": {
 		"app": "https://www.codeandweb.com/texturepacker",
 		"version": "1.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:e8232c10053329e9f44df4356c599d00:c8259b3886b2d21224626fa7bf8f381c:01cdc850fae7973084fa7beb71209ecd$"
+		"smartupdate": "$TexturePacker:SmartUpdate:cf7c75db60905880f9b2609fd500825a:b313628b84062781d04f581efe8da4ec:01cdc850fae7973084fa7beb71209ecd$"
 	}
 }

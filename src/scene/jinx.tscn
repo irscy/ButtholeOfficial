@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://d3mn3tcpb3csj"]
 
 [ext_resource type="Script" path="res://src/script/move_controller.gd" id="1_aiihl"]
-[ext_resource type="SpriteFrames" uid="uid://co628fg4lsmmo" path="res://src/sprite/spriteSHEETS/sprite_frames/jinx.tres" id="2_845c7"]
+[ext_resource type="SpriteFrames" uid="uid://d34e5yr1pbrnw" path="res://src/sprite/spriteSHEETS/sprite_frames/jinx.tres" id="2_845c7"]
 [ext_resource type="PackedScene" uid="uid://bxdirfrj0el1i" path="res://src/scene/anim/swing_anim.tscn" id="5_t01mm"]
 [ext_resource type="PackedScene" uid="uid://bei0sdylmljly" path="res://src/scene/player/FlipAnim.tscn" id="6_lrkq1"]
 [ext_resource type="PackedScene" uid="uid://rwigr8x8i3xj" path="res://src/scene/stick.tscn" id="7_p5uvl"]
@@ -11,31 +11,29 @@ script = ExtResource( "1_aiihl" )
 horiz_spr = "horizSpr"
 up_spr = "upSpr"
 down_spr = "downSpr"
-idle_spr = "idleSpr"
+idle_spr = "default"
 metadata/_edit_lock_ = true
 
 [node name="Sprite" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.6, 0.35)
 frames = ExtResource( "2_845c7" )
-animation = &"swing"
+animation = &"upSpr"
 speed_scale = 0.5
 centered = false
-offset = Vector2(-130, -383)
+offset = Vector2(-139, -412)
 metadata/_edit_lock_ = true
 
 [node name="FlipAnim" parent="Sprite" instance=ExtResource( "6_lrkq1" )]
 
 [node name="Concept" type="AnimatedSprite2D" parent="."]
+visible = false
 modulate = Color(1, 1, 1, 0.439216)
 scale = Vector2(0.6, 0.35)
 frames = ExtResource( "2_845c7" )
-animation = &"idleSpr"
 centered = false
 offset = Vector2(-130, -383)
 
 [node name="Stick" parent="." instance=ExtResource( "7_p5uvl" )]
-position = Vector2(-50, -100)
-rotation = -0.261799
 metadata/_edit_lock_ = true
 
 [node name="SwingAnim" parent="Stick" instance=ExtResource( "5_t01mm" )]

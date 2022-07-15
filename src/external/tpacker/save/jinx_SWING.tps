@@ -94,7 +94,7 @@
         <key>algorithmSettings</key>
         <struct type="AlgorithmSettings">
             <key>algorithm</key>
-            <enum type="AlgorithmSettings::AlgorithmId">MaxRects</enum>
+            <enum type="AlgorithmSettings::AlgorithmId">Grid</enum>
             <key>freeSizeMode</key>
             <enum type="AlgorithmSettings::AlgorithmFreeSizeMode">Fast</enum>
             <key>sizeConstraints</key>
@@ -179,6 +179,10 @@
             <key type="filename">../../../sprite/spriteSHEETS/origin/jinx/4.png</key>
             <key type="filename">../../../sprite/spriteSHEETS/origin/jinx/5.png</key>
             <key type="filename">../../../sprite/spriteSHEETS/origin/jinx/6.png</key>
+            <key type="filename">../../../sprite/spriteSHEETS/origin/jinx/wd1.png</key>
+            <key type="filename">../../../sprite/spriteSHEETS/origin/jinx/wh1.png</key>
+            <key type="filename">../../../sprite/spriteSHEETS/origin/jinx/wh2.png</key>
+            <key type="filename">../../../sprite/spriteSHEETS/origin/jinx/wu1.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -193,6 +197,22 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
+            <key type="filename">../../../sprite/spriteSHEETS/origin/jinx/wd2.png</key>
+            <key type="filename">../../../sprite/spriteSHEETS/origin/jinx/wu2.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>98,103,195,205</rect>
+                <key>scale9Paddings</key>
+                <rect>98,103,195,205</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
         </map>
         <key>fileList</key>
         <array>
@@ -202,6 +222,12 @@
             <filename>../../../sprite/spriteSHEETS/origin/jinx/4.png</filename>
             <filename>../../../sprite/spriteSHEETS/origin/jinx/5.png</filename>
             <filename>../../../sprite/spriteSHEETS/origin/jinx/6.png</filename>
+            <filename>../../../sprite/spriteSHEETS/origin/jinx/wh1.png</filename>
+            <filename>../../../sprite/spriteSHEETS/origin/jinx/wh2.png</filename>
+            <filename>../../../sprite/spriteSHEETS/origin/jinx/wd1.png</filename>
+            <filename>../../../sprite/spriteSHEETS/origin/jinx/wd2.png</filename>
+            <filename>../../../sprite/spriteSHEETS/origin/jinx/wu1.png</filename>
+            <filename>../../../sprite/spriteSHEETS/origin/jinx/wu2.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

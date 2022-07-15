@@ -43,6 +43,7 @@ func set_variable_values() -> void:
 	
 func fix_transform() -> void:
 	defined_sprite.scale = Vector2(0.6, 0.35)
+	defined_sprite.animation = idle_spr
 	
 # move controls (obviously)
 func enable_move_controls(delta : float) -> void:
@@ -67,9 +68,8 @@ func enable_move_controls(delta : float) -> void:
 		moving = false	
 		left = false
 		horiz = false
-		if !moving:
-			defined_sprite.animation = idle_spr
-			defined_sprite.playing = false
+		defined_sprite.animation = idle_spr
+		defined_sprite.playing = false
 		
 		
 	# if right key is held down (make sure moving vertically and left is false)
@@ -92,9 +92,8 @@ func enable_move_controls(delta : float) -> void:
 		moving = false
 		right = false
 		horiz = false
-		if !moving:
-			defined_sprite.animation = idle_spr
-			defined_sprite.playing = false
+		defined_sprite.animation = idle_spr
+		defined_sprite.playing = false
 		
 	
 	# if up key is held down (make sure moving down is false)
@@ -116,9 +115,8 @@ func enable_move_controls(delta : float) -> void:
 		moving = false
 		up = false
 		vertic = false
-		if !moving:
-			defined_sprite.animation = idle_spr
-			defined_sprite.playing = false
+		defined_sprite.animation = idle_spr
+		defined_sprite.playing = false
 		
 		
 		# if down key is held down (make sure moving up is false)
@@ -139,6 +137,5 @@ func enable_move_controls(delta : float) -> void:
 		moving = false
 		down = false
 		vertic = false
-		if !moving:
-			defined_sprite.animation = idle_spr
-			defined_sprite.playing = false
+		defined_sprite.animation = idle_spr
+		defined_sprite.playing = false

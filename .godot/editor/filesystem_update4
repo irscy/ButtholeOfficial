@@ -1,2 +1,5 @@
 res://src/scene/jinx.tscn
-res://src/sprite/spriteSHEETS/sprite_frames/jinx.tres
+res://src/script/weapon.gd
+res://src/script/move_controller.gd
+res://src/scene/Main.tscn
+res://src/scene/stick.tscn

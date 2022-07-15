@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://1omkw7fp7s4n"
-path="res://.godot/imported/jinxWALK_horiz.png-4246fb64f8615042e4cf7ede166c6397.ctex"
+uid="uid://dg4airnc3dmoo"
+path="res://.godot/imported/wu2.png-da3873f07caffa256f54ea4f2c98107f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/sprite/spriteSHEETS/jinxWALK_horiz.png"
-dest_files=["res://.godot/imported/jinxWALK_horiz.png-4246fb64f8615042e4cf7ede166c6397.ctex"]
+source_file="res://src/sprite/spriteSHEETS/origin/jinx/wu2.png"
+dest_files=["res://.godot/imported/wu2.png-da3873f07caffa256f54ea4f2c98107f.ctex"]
 
 [params]
 

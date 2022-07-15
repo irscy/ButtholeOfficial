@@ -5,6 +5,7 @@ class_name weapon
 # variables
 var sprite_child : Node2D
 var weapon_holder : Node2D
+var weapon_holder_sprite : AnimatedSprite2D
 var swing_anim : AnimationPlayer
 var swing_timer : Timer
 var anim_box_enable : Timer
@@ -14,13 +15,13 @@ var swing_index : int
 var can_swing : bool = true
 var hitbox_enabled : bool = false
 
+
+
 func _ready() -> void:
 	set_variable_values()
 	
 func _physics_process(delta):
 	run_swing(delta)
-	
-	print(swing_timer.time_left)
 	
 	if swing_anim.is_playing():
 		hitbox.disabled = false
@@ -67,7 +68,9 @@ func set_variable_values() -> void:
 	swing_index = 1
 	sprite_child = $Sprite
 	weapon_holder = get_parent()
+	weapon_holder_sprite = weapon_holder.get_node("Sprite")
 	hitbox = $Hitbox
+	
 	
 	position = Vector2(-24, -50)
 	rotation = deg2rad(-77)
